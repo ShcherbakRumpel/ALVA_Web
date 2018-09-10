@@ -1,0 +1,60 @@
+// Variables
+//fonts:
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@font-face {
+  font-family: 'mypiad-pro';
+  src: url('../fonts/myriad-pro/MyriadProRegular.eot');
+  src: url('../fonts/myriad-pro/MyriadProRegular.eot') format('embedded-opentype'),
+  url('../fonts/myriad-pro/MyriadProRegular.woff2') format('woff2'),
+  url('../fonts/myriad-pro/MyriadProRegular.woff') format('woff'),
+  url('../fonts/myriad-pro/MyriadProRegular.ttf') format('truetype'),
+  url('../fonts/myriad-pro/MyriadProRegular.svg#MyriadProRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// fonts sizes:
+$font-xl: 36px; //48px;
+$font-l: 24px; //32px;
+$font-m: 18px; //24px;
+$font-s: 16px; //22px;
+// colors:
+$primary-light: #fff;
+$light-green: #81a788;
+$dark-green: #005e59;
+
+$font-middle-green: #006302;
+$font-dark-green: #00470a;
+$font-grey: #a5a5a5;
+
+// reset all default styles:
+@import "reset";
+// Global styles:
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: $primary-light;
+  font-size: $font-s;
+  color: $font-dark-green;
+  font-family: 'myriad-pro', 'PT Sans', sans-serif;
+  @media only screen and (max-width: 767px) {
+    font-size: $font-s * 0,8;
+  }
+}
+
+.clear:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.container {
+
+}
+
+.container-fluid {
+
+}
