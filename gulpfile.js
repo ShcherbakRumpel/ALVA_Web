@@ -73,7 +73,7 @@ gulp.task('build', ['clean', 'img', 'sass'], () => {
 
     const buildCss = gulp.src([
             'src/css/main.css',
-            // 'src/css/libs.min.css'
+            // 'src/css/font-awesome.min.css'
         ])
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))

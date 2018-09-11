@@ -7,11 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alva</title>
     <link href="./css/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <head>
-        <h2>Head</h2>
-    </head>
+    <header class="header-holder">
+        <div class="header-logo">
+            <a href="#">
+                <img src="./images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <button class="header-menu-toggle" onclick="onToggleMenuPressed()">
+            <i class="fa fa-align-justify fa-2x"></i>
+        </button>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <h1>Main</h1>
@@ -19,5 +37,9 @@
     <footer>
         <h2>footer</h2>
     </footer>
+
+    <!--custom js-->
+    <script src="./js/main.js"></script>
+
 </body>
 </html>

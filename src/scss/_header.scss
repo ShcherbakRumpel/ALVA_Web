@@ -1,0 +1,117 @@
+.header {
+  &-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1024;
+  }
+  &-logo {
+    height: 40px;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  &-menu,
+  &-menu ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      padding: 0 0 0 15px;
+      &:last-child {
+        padding-right: 25px;
+      }
+    }
+    a {
+      color: $font-middle-green;
+      font-size: $font-l;
+      text-decoration: none;
+      transition: all .25s;
+      &:hover {
+        //text-decoration: underline;
+        color: #000;
+        font-weight: bold;
+      }
+    }
+    .modal-overflow {
+      display: none;
+    }
+  }
+  &-menu-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-menu,
+  .header-menu ul {
+    a {
+      font-size: $font-m;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .no-scroll {
+    overflow: hidden;
+  }
+  .header-holder {
+    position: relative;
+  }
+  .header-logo {
+    height: 30px;
+  }
+  .header-menu-toggle {
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+  .header-menu ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: all .3s ease-in-out;
+  }
+  .header-menu {
+    border-top: 1px solid $font-middle-green;
+    &.active {
+      ul {
+        max-height: 500px;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0,0,0,0.3);
+        z-index: 900;
+      }
+    }
+  }
+  .header-menu,
+  .header-menu ul {
+    flex-direction: column;
+    display: block;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 1000;
+    li {
+      padding: 10px 5px;
+      border-bottom: 1px solid $font-middle-green;
+      &:hover {
+        background: #ddd;
+      }
+    }
+    a {
+      font-size: $font-s;
+      display: block;
+    }
+  }
+}

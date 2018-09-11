@@ -40,9 +40,6 @@ body {
   font-size: $font-s;
   color: $font-dark-green;
   font-family: 'myriad-pro', 'PT Sans', sans-serif;
-  @media only screen and (max-width: 767px) {
-    font-size: $font-s * 0,8;
-  }
 }
 
 .clear:after {
@@ -58,3 +55,8 @@ body {
 .container-fluid {
 
 }
+
+
+// HEADER
+@import "header";
+// FOOTER
