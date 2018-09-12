@@ -22,6 +22,7 @@ $font-s: 16px; //22px;
 $primary-light: #fff;
 $light-green: #81a788;
 $dark-green: #005e59;
+$green: #2e9100;
 
 $font-middle-green: #006302;
 $font-dark-green: #00470a;
@@ -40,6 +41,15 @@ body {
   font-size: $font-s;
   color: $font-dark-green;
   font-family: 'myriad-pro', 'PT Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body * {
+  box-sizing: border-box;
+}
+.content {
+  flex: 1 0 auto;
 }
 
 .clear:after {
@@ -60,3 +70,4 @@ body {
 // HEADER
 @import "header";
 // FOOTER
+@import "footer";
