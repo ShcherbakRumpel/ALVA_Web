@@ -1,11 +1,3 @@
-
-
-// const onToggleMenuPressed = () => {
-//     const menu = document.querySelector('.header-menu');
-//     document.querySelector('body').classList.toggle('no-scroll')
-//     return menu.classList.toggle('active')
-// };
-
 const hamburger = document.querySelector('.header-menu-toggle');
 const menu = document.querySelector('.header-menu');
 

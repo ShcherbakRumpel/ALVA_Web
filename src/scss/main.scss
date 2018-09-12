@@ -1,6 +1,7 @@
 // Variables
 //fonts:
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
 @font-face {
   font-family: 'mypiad-pro';
   src: url('../fonts/myriad-pro/MyriadProRegular.eot');
@@ -26,6 +27,7 @@ $green: #2e9100;
 
 $font-middle-green: #006302;
 $font-dark-green: #00470a;
+$font-darkest-green: #133a01;
 $font-grey: #a5a5a5;
 
 // reset all default styles:
@@ -45,9 +47,11 @@ body {
   flex-direction: column;
   height: 100%;
 }
+
 body * {
   box-sizing: border-box;
 }
+
 .content {
   flex: 1 0 auto;
 }
@@ -59,15 +63,89 @@ body * {
 }
 
 .container {
-
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  &._vertical-padding {
+    padding: 50px 0;
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      padding: 35px 0;
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 20px 0;
+    }
+  }
 }
 
-.container-fluid {
-
+.top-banner {
+  width: 100%;
+  height: 350px;
+  background-image: url('../images/main-top.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  h3 {
+    padding: 70px 0 0 70px;
+    color: $primary-light;
+    font-size: $font-xl;
+    max-width: 580px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    height: 300px;
+    h3 {
+      padding: 50px 0 0 50px;
+      font-size: $font-l;
+      max-width: 390px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    height: 200px;
+    h3 {
+      padding: 30px 0 0 30px;
+      font-size: $font-m;
+    }
+  }
 }
 
+.main-title {
+  padding: 15px 0 0 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $font-grey;
+  span {
+    height: 50px;
+    width: 100px;
+    background: url("../images/sprite.png") -131px -83px;
+    display: inline-block;
+  }
+  h1 {
+    font-size: $font-xl;
+    text-transform: uppercase;
+    color: $green;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 10px 0 0 25px;
+    span {
+      zoom: 0.8;
+    }
+    h1 {
+      font-size: $font-l;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    padding: 5px 0 0 20px;
+    span {
+      zoom: 0.7;
+    }
+    h1 {
+      font-size: $font-m;
+    }
+  }
+}
 
 // HEADER
 @import "header";
 // FOOTER
 @import "footer";
+// PARTNERS
+@import "partners";
