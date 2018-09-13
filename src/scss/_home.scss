@@ -1,0 +1,251 @@
+.home {
+  display: none;
+  &-qr-holder {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: space-around;
+    .qr-left-column,
+    .qr-middle-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+      img {
+        height: 200px;
+        width: 200px;
+        padding-left: 20px;
+      }
+      span {
+        display: inline-block;
+        height: 80px;
+        width: 72px;
+      }
+    }
+    .qr-left-column {
+      span {
+        background-image: url("../images/icon-apple.png");
+      }
+    }
+    .qr-middle-column {
+      span {
+        background-image: url("../images/icon-android.png");
+      }
+    }
+    .qr-right-column {
+      img {
+        height: 300px;
+        width: auto;
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      padding: 10px;
+      .qr-left-column,
+      .qr-middle-column {
+        img {
+          height: 150px;
+          width: 150px;
+          padding-left: 20px;
+        }
+        span {
+          zoom: 0.8;
+        }
+      }
+      .qr-right-column {
+        img {
+          height: 250px;
+        }
+      }
+    }
+    @media only screen and (max-width: 570px) {
+      .qr-right-column {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  &-news-holder {
+    padding: 30px;
+    max-width: 1400px;
+    display: flex;
+    position: relative;
+    margin: 30px auto;
+    .news-item {
+      display: flex;
+      padding-bottom: 50px;
+    }
+    .news-left-column,
+    .news-right-column {
+      width: 50%;
+      padding: 30px;
+      .news-image {
+        height: 150px;
+        width: 280px;
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      .news-description {
+        font-style: italic;
+        color: $font-dark-green;
+        padding-left: 5px;
+        min-height: 150px;
+        line-height: 1.2;
+        p {
+          max-height: 130px;
+          overflow: hidden;
+        }
+        a {
+          font-style: normal;
+          text-decoration: none;
+          cursor: pointer;
+          color: $font-dark-green;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+    }
+    .news-left-column {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 5px;
+        background: $green;
+        top: 0;
+        bottom: 0;
+        left: calc(50% - 2.5px);
+      }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1100px) {
+      margin: 20px auto;
+      .news-image {
+        height: 120px;
+        width: 230px;
+      }
+      .news-item {
+        flex-direction: column;
+        padding-bottom: 30px;
+      }
+      .news-description {
+        padding-left: 0;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      margin: 0 auto;
+      padding: 0;
+      flex-direction: column;
+      .news-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+      }
+      .news-image {
+        height: 100px;
+        width: 200px;
+      }
+      .news-left-column,
+      .news-right-column {
+        width: 100%;
+        .news-description {
+          padding-left: 0;
+          min-height: 0;
+        }
+      }
+      .news-left-column {
+        border-bottom: 3px solid $green;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  &-contact-holder {
+    h2 {
+      font-size: $font-l;
+      color: $font-dark-green;
+      padding: 20px;
+      text-align: center;
+    }
+    .contact-form-wrap {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+    .contact-form-holder {
+      display: flex;
+    }
+    .contact-form-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 10px;
+      input,
+      textarea  {
+        box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+        background: $dark-green;
+        padding: 13px;
+        color: $primary-light;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: $font-s;
+        &::placeholder {
+          color: #a5a5a5;
+          font-size: $font-s;
+          font-weight: lighter;
+          font-family: 'myriad-pro', 'PT Sans', sans-serif;
+        }
+      }
+      .contact-form-left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-right: 10px;
+        input {
+          margin-bottom: 9px;
+        }
+      }
+      .contact-form-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        textarea {
+          height: 150px;
+          text-align: left;
+        }
+      }
+    }
+    .contact-form-submit {
+      text-align: right;
+      padding-bottom: 20px;
+      padding-right: 10px;
+      button {
+        color: $primary-light;
+        background: $dark-green;
+        padding: 10px;
+        text-align: center;
+        font-size: $font-s;
+        cursor: pointer;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .contact-form-content {
+        flex-direction: column;
+        padding-bottom: 10px;
+        .contact-form-left, .contact-form-right {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+}

@@ -12,67 +12,206 @@
 </head>
 <body>
 <div class="content">
-    <header class="header-holder">
-        <div class="header-logo">
-            <a href="#">
-                <img src="./images/logo.png" alt="Logo">
-            </a>
+    <header>
+        <div class="header-holder">
+            <div class="header-logo">
+                <a href="#">
+                    <img src="./images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <button class="header-menu-toggle">
+                <i class="fa fa-align-justify fa-2x"></i>
+            </button>
+            <nav class="header-menu">
+                <ul onclick="onShowPagePressed(event)">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#" style="pointer-events: none;">Новости</a></li>
+                    <li><a href="#" style="pointer-events: none;">Контакты</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#" style="pointer-events: none;">Сотрудничество</a></li>
+                </ul>
+            </nav>
         </div>
-        <button class="header-menu-toggle">
-            <i class="fa fa-align-justify fa-2x"></i>
-        </button>
-        <nav class="header-menu">
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Партнеры</a></li>
-                <li><a href="#">Сотрудничество</a></li>
-            </ul>
-        </nav>
+        <div class="top-banner">
+            <h3>Мы расширяем границы того, что вас окружает</h3>
+        </div>
     </header>
-    <div class="top-banner">
-        <h3>Мы расширяем границы того, что вас окружает</h3>
-    </div>
 
     <main>
-        <!--PARTNERS START-->
-        <div class="main-title">
-            <span></span><h1>партнеры</h1>
+
+        <!--HOME PAGE START-->
+        <div class="home active-page">
+            <div class="home-qr-holder">
+                <div class="qr-left-column">
+                    <span></span>
+                    <img src="./images/qr-apple.png" alt="Apple QR">
+                </div>
+                <div class="qr-middle-column">
+                    <span></span>
+                    <img src="./images/qr-android.png" alt="Android QR">
+                </div>
+                <div class="qr-right-column">
+                    <img src="./images/iphone.png" alt="Iphone">
+                </div>
+            </div>
+            <hr>
+            <div class="home-news-holder">
+                <div class="news-left-column">
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="./images/default-news-1.png" alt="Our news">
+                        </div>
+                        <div class="news-description">
+                            <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aperiam aut commodi culpa cupiditate distinctio dolore dolores ducimus labore maxime natus non quam quasi, quidem sapiente similique tempore temporibus, totam voluptates! Cumque cupiditate excepturi, exercitationem impedit iste qui quos, repudiandae sapiente unde veniam, vero voluptatibus? Adipisci alias animi, at culpa enim eos eum inventore ipsa, libero maiores maxime minus nam natus nesciunt nisi obcaecati officiis quaerat quibusdam quis quo reiciendis tempora velit voluptatum. Consequuntur culpa debitis error odio perferendis ratione repellat repudiandae tenetur. Atque autem enim explicabo fugiat harum magnam maxime nisi nostrum quis suscipit totam, vel vero voluptatibus!                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="./images/default-news-1.png" alt="Our news">
+                        </div>
+                        <div class="news-description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo facilis fuga laboriosam magni nesciunt, quam quidem sit suscipit ut?
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="./images/default-news-1.png" alt="Our news">
+                        </div>
+                        <div class="news-description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo facilis fuga laboriosam magni nesciunt, quam quidem sit suscipit ut?
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="news-right-column">
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="./images/default-news-2.png" alt="Our news">
+                        </div>
+                        <div class="news-description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo facilis fuga laboriosam magni nesciunt, quam quidem sit suscipit ut?
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="./images/default-news-2.png" alt="Our news">
+                        </div>
+                        <div class="news-description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo facilis fuga laboriosam magni nesciunt, quam quidem sit suscipit ut?
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="./images/default-news-2.png" alt="Our news">
+                        </div>
+                        <div class="news-description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo facilis fuga laboriosam magni nesciunt, quam quidem sit suscipit ut?
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="./images/default-news-2.png" alt="Our news">
+                        </div>
+                        <div class="news-description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo facilis fuga laboriosam magni nesciunt, quam quidem sit suscipit ut?
+                            </p>
+                            <a href="#">Читать далее...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="home-contact-holder">
+                <h2>Как с нами связаться?</h2>
+                <div class="contact-form-wrap">
+                    <form action="#">
+                        <div class="contact-form-content">
+                            <div class="contact-form-left">
+                                <input type="text" placeholder="Введите ваше имя" required>
+                                <input type="tel" placeholder="Введите ваш номер телефона">
+                                <input type="email" placeholder="Введите ваш email" required>
+                            </div>
+                            <div class="contact-form-right">
+                                <textarea placeholder="Ваше сообщение"></textarea>
+                            </div>
+                        </div>
+                        <div class="contact-form-submit">
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="container _vertical-padding">
-            <div class="partners-item">
-                <div class="partners-avatar"></div>
-                <div class="partners-info">
-                    <div class="partners-name"><h3><a href="#">название компании</a></h3></div>
-                    <div class="partners-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cupiditate deserunt ducimus eligendi hic illo minima nihil sapiente temporibus velit?</div>
-                </div>
+        <!--HOME PAGE END-->
+
+        <!--PARTNERS START-->
+        <div class="partners">
+            <div class="main-title">
+                <span></span>
+                <h1>партнеры</h1>
             </div>
-            <div class="partners-item">
-                <div class="partners-avatar"></div>
-                <div class="partners-info">
-                    <div class="partners-name"><h3><a href="#">название компании</a></h3></div>
-                    <div class="partners-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cupiditate deserunt ducimus eligendi hic illo minima nihil sapiente temporibus velit?</div>
+            <div class="container _vertical-padding">
+                <div class="partners-item">
+                    <div class="partners-avatar"></div>
+                    <div class="partners-info">
+                        <div class="partners-name"><h3><a href="#">название компании</a></h3></div>
+                        <div class="partners-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                            cupiditate deserunt ducimus eligendi hic illo minima nihil sapiente temporibus velit?
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="partners-item">
-                <div class="partners-avatar"></div>
-                <div class="partners-info">
-                    <div class="partners-name"><h3><a href="#">название компании</a></h3></div>
-                    <div class="partners-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cupiditate deserunt ducimus eligendi hic illo minima nihil sapiente temporibus velit?</div>
+                <div class="partners-item">
+                    <div class="partners-avatar"></div>
+                    <div class="partners-info">
+                        <div class="partners-name"><h3><a href="#">название компании</a></h3></div>
+                        <div class="partners-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                            cupiditate deserunt ducimus eligendi hic illo minima nihil sapiente temporibus velit?
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="partners-item">
-                <div class="partners-avatar"></div>
-                <div class="partners-info">
-                    <div class="partners-name"><h3><a href="#">название компании</a></h3></div>
-                    <div class="partners-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cupiditate deserunt ducimus eligendi hic illo minima nihil sapiente temporibus velit?</div>
+                <div class="partners-item">
+                    <div class="partners-avatar"></div>
+                    <div class="partners-info">
+                        <div class="partners-name"><h3><a href="#">название компании</a></h3></div>
+                        <div class="partners-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                            cupiditate deserunt ducimus eligendi hic illo minima nihil sapiente temporibus velit?
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-item">
+                    <div class="partners-avatar"></div>
+                    <div class="partners-info">
+                        <div class="partners-name"><h3><a href="#">название компании</a></h3></div>
+                        <div class="partners-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+                            cupiditate deserunt ducimus eligendi hic illo minima nihil sapiente temporibus velit?
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!--PARTNERS END-->
+
     </main>
 </div>
+
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-left">

@@ -52,6 +52,10 @@ body * {
   box-sizing: border-box;
 }
 
+.active-page {
+  display: block!important;
+}
+
 .content {
   flex: 1 0 auto;
 }
@@ -63,7 +67,7 @@ body * {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -147,5 +151,7 @@ body * {
 @import "header";
 // FOOTER
 @import "footer";
+// HOME
+@import "home";
 // PARTNERS
 @import "partners";

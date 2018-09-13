@@ -5,7 +5,7 @@ const toggleMenu = function toggleMenu() {
     menu.classList.toggle('active');
 };
 
-hamburger.addEventListener('click', function(e) {
+hamburger.addEventListener('click', function (e) {
     e.stopPropagation();
     toggleMenu();
 });
@@ -19,3 +19,38 @@ document.addEventListener('click', function (e) {
         toggleMenu();
     }
 });
+
+const onShowPagePressed = (e) => {
+    let activePage = e.target.innerHTML;
+    if (activePage) {
+        const home = document.querySelector('.home');
+        const partners = document.querySelector('.partners');
+        const news = document.querySelector('.news');
+        const cooperation = document.querySelector('.cooperation');
+        const contacts = document.querySelector('.contacts');
+        let currentPage = document.querySelector('.active-page');
+        currentPage.classList.remove('active-page');
+
+        switch (activePage) {
+            case 'Главная':
+                home.classList.add('active-page');
+                break;
+            case 'Новости':
+                news.classList.add('active-page');
+                break;
+            case 'Контакты':
+                contacts.classList.add('active-page');
+                break;
+            case 'Партнеры':
+                partners.classList.add('active-page');
+                break;
+            case 'Сотрудничество':
+                cooperation.classList.add('active-page');
+                break;
+            default:
+                home.classList.add('active-page');
+        }
+
+    }
+
+};
