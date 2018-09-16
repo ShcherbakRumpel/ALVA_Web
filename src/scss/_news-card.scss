@@ -27,6 +27,9 @@
       a {
         display: block;
         text-decoration: underline;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
         &:hover {
           text-decoration: none;
         }
