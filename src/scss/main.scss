@@ -24,6 +24,7 @@ $primary-light: #fff;
 $light-green: #81a788;
 $dark-green: #005e59;
 $green: #2e9100;
+$transparent-green: rgba(46, 145, 0, 0.3);
 
 $font-middle-green: #006302;
 $font-dark-green: #00470a;
@@ -79,6 +80,9 @@ body * {
     @media only screen and (max-width: 767px) {
       padding: 20px 0;
     }
+  }
+  &._row {
+    flex-direction: row;
   }
 }
 
@@ -151,7 +155,13 @@ body * {
 @import "header";
 // FOOTER
 @import "footer";
+// CONTACT FORM
+@import "contact-form";
+//NEWS CARD
+@import "news-card";
 // HOME
 @import "home";
 // PARTNERS
 @import "partners";
+//NEWS PAGE
+@import "news";

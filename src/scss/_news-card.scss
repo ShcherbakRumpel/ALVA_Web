@@ -1,0 +1,135 @@
+.news {
+  &-item {
+    display: flex;
+    padding-bottom: 50px;
+    font-style: italic;
+    color: $font-dark-green;
+    padding-left: 5px;
+    min-height: 150px;
+    line-height: 1.2;
+    p {
+      max-height: 130px;
+      overflow: hidden;
+    }
+    a {
+      font-style: normal;
+      text-decoration: none;
+      cursor: pointer;
+      color: $font-dark-green;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    h3 {
+      font-size: $font-l;
+      text-transform: uppercase;
+      a {
+        display: block;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &._big {
+      height: 260px;
+      overflow: hidden;
+      p {
+        max-height: 170px;
+      }
+    }
+  }
+  &-image {
+    height: 150px;
+    width: 280px;
+    &._big {
+      height: 200px;
+      width: 400px;
+      margin-right: 5px;
+    }
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  &-item._float {
+    display: block;
+    .news-image {
+      float: left;
+      height: 100px;
+      width: 185px;
+    }
+    .news-description {
+      max-height: 213px;
+      overflow: hidden;
+    }
+    p {
+      display: inline;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  margin: 20px auto;
+  .news-image {
+    height: 120px;
+    width: 230px;
+    &._big {
+      height: 160px;
+      width: 300px;
+    }
+  }
+  .news-item {
+    flex-direction: column;
+    padding-bottom: 25px;
+    h3 {
+      font-size: $font-m;
+    }
+    &._big {
+      p {
+        max-height: 55px;
+      }
+    }
+  }
+  .news-description {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .news-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    h3 {
+      font-size: $font-s;
+      text-align: center;
+    }
+    &._big {
+      height: auto;
+      p {
+        max-height: 95px;
+      }
+    }
+    &._float {
+      h3 {
+        text-align: left;
+      }
+      .news-description {
+        max-height: 210px;
+      }
+    }
+  }
+  .news-image {
+    height: 100px;
+    width: 200px;
+    &._big {
+      height: 100px;
+      width: 200px;
+    }
+  }
+  .news-description {
+    padding-left: 0;
+    min-height: 0;
+  }
+}

@@ -1,0 +1,76 @@
+.contact-form {
+  &-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  &-holder {
+    display: flex;
+  }
+  &-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10px;
+    input,
+    textarea {
+      box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+      background: $green;
+      padding: 13px;
+      color: $primary-light;
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: $font-s;
+      &::placeholder {
+        color: #ddd;
+        font-size: $font-s;
+        font-weight: lighter;
+        font-family: 'myriad-pro', 'PT Sans', sans-serif;
+      }
+    }
+  }
+  &-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 10px;
+    input {
+      margin-bottom: 9px;
+    }
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    textarea {
+      height: 150px;
+      text-align: left;
+    }
+  }
+  &-submit {
+    text-align: right;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    button {
+      box-shadow: inset 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+      color: $primary-light;
+      background: $green;
+      padding: 10px;
+      text-align: center;
+      font-size: $font-s;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-form-content {
+    flex-direction: column;
+    padding-bottom: 10px;
+    .contact-form-left, .contact-form-right {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
