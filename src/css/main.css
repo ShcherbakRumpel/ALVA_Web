@@ -1084,3 +1084,104 @@ body * {
       .about .about-social a {
         font-size: 18px;
         padding-left: 10px; } }
+
+.cooperation {
+  display: none; }
+  .cooperation h2 {
+    font-size: 48px;
+    padding: 20px;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #2e9100), color-stop(66%, #133a01), to(#fff));
+    background: -webkit-linear-gradient(top, #2e9100 33%, #133a01 66%, #fff);
+    background: -o-linear-gradient(top, #2e9100 33%, #133a01 66%, #fff);
+    background: linear-gradient(180deg, #2e9100 33%, #133a01 66%, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #133a01;
+    display: table;
+    margin: 20px auto; }
+  .cooperation-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto; }
+  .cooperation-item {
+    height: 300px;
+    position: relative;
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
+    border-width: 1px;
+    border-style: solid;
+    -webkit-border-image: -webkit-gradient(linear, 0 100%, 0 0, from(#003b01), to(rgba(255, 255, 255, 0))) 1 100%;
+    -webkit-border-image: -webkit-linear-gradient(bottom, #003b01, rgba(255, 255, 255, 0)) 1 100%;
+    -o-border-image: -o-linear-gradient(bottom, #003b01, rgba(255, 255, 255, 0)) 1 100%;
+    border-image: -webkit-gradient(linear, left bottom, left top, from(#003b01), to(rgba(255, 255, 255, 0))) 1 100%;
+    border-image: linear-gradient(to top, #003b01, rgba(255, 255, 255, 0)) 1 100%;
+    border-top: none;
+    border-bottom: 1px solid #003b01;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(46, 145, 0, 0.8)), color-stop(rgba(0, 99, 2, 0.6)), color-stop(rgba(0, 99, 2, 0.3)), to(#ffffff));
+    background-image: -webkit-linear-gradient(bottom, rgba(46, 145, 0, 0.8), rgba(0, 99, 2, 0.6), rgba(0, 99, 2, 0.3), #ffffff);
+    background-image: -o-linear-gradient(bottom, rgba(46, 145, 0, 0.8), rgba(0, 99, 2, 0.6), rgba(0, 99, 2, 0.3), #ffffff);
+    background-image: linear-gradient(to top, rgba(46, 145, 0, 0.8), rgba(0, 99, 2, 0.6), rgba(0, 99, 2, 0.3), #ffffff); }
+    .cooperation-item h3, .cooperation-item h4 {
+      font-size: 24px;
+      text-align: center;
+      background: -webkit-linear-gradient(#2e9100 25%, #003b01 75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .cooperation-item h4 {
+      font-style: italic; }
+    .cooperation-item p {
+      padding-top: 20px;
+      text-align: center;
+      position: static;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #003b01; }
+      .cooperation-item p:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        background: #003b01; }
+  .cooperation-form {
+    max-width: 950px;
+    margin: 0 auto;
+    border-top: 1px solid #a5a5a5; }
+    .cooperation-form .subtitle {
+      font-size: 24px;
+      color: #003b01;
+      padding: 15px 0 30px 0;
+      text-align: center; }
+  @media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .cooperation h2 {
+      font-size: 36px; }
+    .cooperation h3, .cooperation h4 {
+      font-size: 18px; }
+    .cooperation p {
+      padding-top: 15px; }
+    .cooperation .cooperation-item {
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .cooperation h2 {
+      font-size: 36px; }
+    .cooperation h3, .cooperation h4 {
+      font-size: 18px; }
+    .cooperation p {
+      padding-top: 10px; }
+    .cooperation .cooperation-item {
+      margin-bottom: 15px; } }

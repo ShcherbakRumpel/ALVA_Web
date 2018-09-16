@@ -1,0 +1,116 @@
+.cooperation {
+  display: none;
+  h2 {
+    //font-size: $font-xl;
+    font-size: 48px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(180deg, $green 33%, $font-darkest-green 66%, $primary-light);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $font-darkest-green;
+    display: table;
+    margin: 20px auto;
+  }
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  &-item {
+    height: 300px;
+    position: relative;
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 40px;
+    box-shadow: inset 0px 2px 7px 0px rgba(0,0,0,0.4);
+    //border gradient
+    border-width: 1px;
+    border-style: solid;
+    -webkit-border-image:
+            -webkit-gradient(linear, 0 100%, 0 0, from($font-darkest-contacts), to(rgba(255, 255, 255, 0))) 1 100%;
+    -webkit-border-image:
+            -webkit-linear-gradient(bottom, $font-darkest-contacts, rgba(255, 255, 255, 0)) 1 100%;
+    -moz-border-image:
+            -moz-linear-gradient(bottom, $font-darkest-contacts, rgba(255, 255, 255, 0)) 1 100%;
+    -o-border-image:
+            -o-linear-gradient(bottom, $font-darkest-contacts, rgba(255, 255, 255, 0)) 1 100%;
+    border-image:
+            linear-gradient(to top, $font-darkest-contacts, rgba(255, 255, 255, 0)) 1 100%;
+    border-top: none;
+    border-bottom: 1px solid $font-darkest-contacts;
+    //background gradient
+    background-image: linear-gradient(to top, rgba(46, 145, 0, 0.8), rgba(0, 99, 2, 0.6), rgba(0, 99, 2, 0.3), #ffffff);
+    h3, h4 {
+      font-size: $font-l;
+      text-align: center;
+      background: -webkit-linear-gradient($green 25%, $font-darkest-contacts 75%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h4 {
+      font-style: italic;
+    }
+    p {
+      padding-top: 20px;
+      text-align: center;
+      position: static;
+      font-size: $font-m;
+      line-height: 1.3;
+      color: $font-darkest-contacts;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+        background: $font-darkest-contacts;
+      }
+    }
+  }
+  &-form {
+    max-width: 950px;
+    margin: 0 auto;
+    border-top: 1px solid $font-grey;
+    .subtitle {
+      font-size: $font-l;
+      color: $font-darkest-contacts;
+      padding: 15px 0 30px 0;
+      text-align: center;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1100px) {
+    h2 {
+      font-size: $font-xl;
+    }
+    h3, h4 {
+      font-size: $font-m;
+    }
+    p {
+      padding-top: 15px;
+    }
+    .cooperation-item {
+      margin-bottom: 25px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    h2 {
+      font-size: $font-xl;
+    }
+    h3, h4 {
+      font-size: $font-m;
+    }
+    p {
+      padding-top: 10px;
+    }
+
+    .cooperation-item {
+      margin-bottom: 15px;
+    }
+  }
+}
