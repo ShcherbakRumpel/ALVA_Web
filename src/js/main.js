@@ -27,7 +27,7 @@ const onShowPagePressed = (e) => {
         const partners = document.querySelector('.partners');
         const news = document.querySelector('.news');
         const cooperation = document.querySelector('.cooperation');
-        const contacts = document.querySelector('.contacts');
+        const aboutUs = document.querySelector('.about');
         let currentPage = document.querySelector('.active-page');
         currentPage.classList.remove('active-page');
 
@@ -38,8 +38,8 @@ const onShowPagePressed = (e) => {
             case 'Новости':
                 news.classList.add('active-page');
                 break;
-            case 'Контакты':
-                contacts.classList.add('active-page');
+            case 'О нас':
+                aboutUs.classList.add('active-page');
                 break;
             case 'Партнеры':
                 partners.classList.add('active-page');

@@ -1,0 +1,232 @@
+.about {
+  display: none;
+  &-content {
+    padding: 20px !important;
+  }
+  &-section {
+    display: flex;
+    align-items: flex-start;
+  }
+  &-logo {
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &-description {
+    p {
+      margin: 30px 0;
+      padding: 20px;
+      background: $green;
+      color: $primary-light;
+      font-size: $font-l;
+      text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: -3px 3px 2px 0px rgba(0,0,0,0.3);
+    }
+  }
+  h2 {
+    color: $font-darkest-contacts;
+    font-size: $font-xl;
+    text-align: center;
+  }
+  h3 {
+    color: $green;
+    font-size: $font-xl;
+    text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+  }
+  &-contacts-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 820px;
+    padding: 30px 10px;
+    margin: 0 auto ;
+  }
+  &-contacts {
+    padding: 30px 0;
+  }
+  &-social{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    span {
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+    }
+    a {
+      font-size: $font-l;
+      color: $font-darkest-contacts;
+      padding-left: 20px;
+      text-decoration: none;
+    }
+    &._email {
+      span {
+        background: url("../images/sprite.png") -45px 6px;
+        width: 50px;
+        margin-left: 10px;
+      }
+    }
+    &._fb {
+      span {
+        width: 40px;
+        margin-left: 20px;
+        background: url("../images/sprite.png") -99px -8px;
+      }
+    }
+    &._tel {
+      span {
+        background: url("../images/sprite.png") 11px -6px;
+        margin-right: 5px;
+        width: 55px;
+      }
+    }
+    &._insta {
+      span {
+        width: 45px;
+        margin-left: 15px;
+        background: url("../images/sprite.png") -141px 6px;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      span, a {
+        opacity: 0.8;
+      }
+    }
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .about-content {
+      padding: 20px;
+    }
+    .about-contacts {
+      padding: 20px 0;
+    }
+    .about-logo {
+      width: 300px;
+      margin-right: 15px;
+    }
+    .about-description {
+      p {
+        font-size: $font-m;
+        padding: 15px;
+        margin: 20px 0;
+      }
+    }
+    h2, h3 {
+      font-size: $font-l;
+      padding-left: 15px;
+    }
+    .about-social{
+      justify-content: center;
+      span {
+        zoom: 0.8;
+      }
+      a {
+        font-size: $font-m;
+        padding-left: 15px;
+      }
+    }
+  }
+  @media only screen and (min-width: 451px) and (max-width: 767px) {
+    .about-section {
+      flex-direction: column;
+    }
+    .about-content {
+      padding: 15px;
+    }
+    .about-contacts {
+      padding: 15px 0;
+    }
+    .about-logo {
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+    .about-description {
+      p {
+        font-size: $font-s;
+        padding: 10px;
+        margin: 10px 0;
+      }
+    }
+    h3 {
+      font-size: $font-m;
+      padding-left: 10px;
+    }
+    .about-social{
+      justify-content: flex-start;
+      span {
+        zoom: 0.7;
+      }
+      &._email span {
+        zoom: 0.6;
+        margin: 0;
+        width: 60px;
+        background: url("../images/sprite.png") -43px 6px;
+      }
+      a {
+        font-size: $font-m;
+        padding-left: 10px;
+      }
+    }
+    .about-social {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .about-social {
+      width: 100%;
+    }
+    .about-section {
+      flex-direction: column;
+    }
+    .about-content {
+      padding: 15px;
+    }
+    .about-contacts {
+      padding: 15px 0;
+    }
+    .about-logo {
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+    .about-description {
+      p {
+        font-size: $font-s;
+        padding: 10px;
+        margin: 10px 0;
+      }
+    }
+    h3 {
+      font-size: $font-m;
+      padding-left: 10px;
+    }
+    .about-social{
+      justify-content: flex-start;
+      span {
+        zoom: 0.7;
+      }
+      &._email span {
+        zoom: 0.6;
+        margin: 0;
+        width: 60px;
+        background: url("../images/sprite.png") -43px 6px;
+      }
+      a {
+        font-size: $font-m;
+        padding-left: 10px;
+      }
+    }
+  }
+}

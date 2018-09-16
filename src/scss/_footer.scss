@@ -7,7 +7,7 @@
     align-items: stretch;
     flex-wrap: wrap;
     max-width: 800px;
-    padding: 20px 0 10px 0;
+    padding: 0 0 10px 0;
     margin: 0 auto;
     font-size: $font-l;
   }
@@ -18,9 +18,9 @@
     justify-content: center;
     //align-items: center;
     img {
-      width: 200px;
+      width: 250px;
       height: auto;
-      padding-left: 20px;
+      padding: 0 5px;
     }
     span {
       padding: 20px 0;
@@ -30,6 +30,7 @@
   &-right {
     color: $primary-light;
     text-shadow: -3px 4px 8px rgba(0, 0, 0, 0.6);
+    padding-top: 40px;
     p {
       padding: 0 0 13px 0;
     }
@@ -64,12 +65,14 @@
   }
   .footer-left {
     img {
-      width: 150px;
-      padding-left: 15px;
+      width: 200px;
     }
     span {
       padding: 15px 0;
     }
+  }
+  .footer-right {
+    padding-top: 30px;
   }
   .footer-social {
     .facebook span,
@@ -85,12 +88,15 @@
   .footer-left {
     align-items: center;
     img {
-      width: 100px;
-      padding-left: 10px;
+      width: 150px;
     }
     span {
       padding: 10px 0;
     }
+  }
+
+  .footer-right {
+    padding-top: 20px;
   }
   .footer-social {
     .facebook span,
