@@ -1,11 +1,11 @@
 .cooperation {
-  display: none;
+  //display: none;
   h2 {
     //font-size: $font-xl;
     font-size: 48px;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(180deg, $green 33%, $font-darkest-green 66%, $primary-light);
+    background: linear-gradient(180deg, #43ca04, #275213);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: $font-darkest-green;
@@ -43,11 +43,11 @@
     border-top: none;
     border-bottom: 1px solid $font-darkest-contacts;
     //background gradient
-    background-image: linear-gradient(to top, rgba(46, 145, 0, 0.8), rgba(0, 99, 2, 0.6), rgba(0, 99, 2, 0.3), #ffffff);
+    background-image: linear-gradient(to top, #2f9001 1%, #ffffff);
     h3, h4 {
       font-size: $font-l;
       text-align: center;
-      background: -webkit-linear-gradient($green 25%, $font-darkest-contacts 75%);
+      background: -webkit-linear-gradient(#39863a 25%, #004b02 75%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -60,7 +60,8 @@
       position: static;
       font-size: $font-m;
       line-height: 1.3;
-      color: $font-darkest-contacts;
+      color: $primary-light;
+      text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.3);
       &:after {
         content: '';
         display: block;
@@ -88,9 +89,6 @@
     h2 {
       font-size: $font-xl;
     }
-    h3, h4 {
-      font-size: $font-m;
-    }
     p {
       padding-top: 15px;
     }
@@ -101,9 +99,6 @@
   @media only screen and (max-width: 767px) {
     h2 {
       font-size: $font-xl;
-    }
-    h3, h4 {
-      font-size: $font-m;
     }
     p {
       padding-top: 10px;

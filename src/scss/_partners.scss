@@ -1,5 +1,5 @@
 .partners {
-  display: none;
+  //display: none;
   &-item  {
     display: flex;
     align-items: center;
@@ -89,6 +89,9 @@
     padding: 10px 0;
     * {
       text-align: center;
+    }
+    .partners-info {
+      padding-right: 0;
     }
   }
 }

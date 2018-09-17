@@ -1,5 +1,5 @@
 .about {
-  display: none;
+  //display: none;
   &-content {
     padding: 20px !important;
   }
@@ -213,7 +213,8 @@
       padding-left: 10px;
     }
     .about-social{
-      justify-content: flex-start;
+      //justify-content: flex-start;
+      justify-content: center;
       span {
         zoom: 0.7;
       }
