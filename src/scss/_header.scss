@@ -41,6 +41,15 @@
   &-menu-toggle {
     display: none;
   }
+  &-back-btn {
+    border: none;
+    font-size: $font-s;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    color: $font-darkest-green;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

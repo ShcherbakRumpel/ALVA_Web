@@ -219,6 +219,16 @@ body * {
 .header-menu-toggle {
   display: none; }
 
+.header-back-btn {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #133a01; }
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .header-menu a,
   .header-menu ul a {
@@ -524,11 +534,15 @@ body * {
 
 .news-image {
   height: 150px;
-  width: 280px; }
+  max-width: 300px;
+  width: auto;
+  padding-right: 10px;
+  vertical-align: middle; }
   .news-image._big {
     height: 200px;
-    width: 400px;
-    margin-right: 5px; }
+    max-width: 390px;
+    width: auto;
+    padding-right: 10px; }
   .news-image img {
     height: 100%;
     width: auto; }
@@ -538,9 +552,12 @@ body * {
   .news-item._float .news-image {
     float: left;
     height: 100px;
-    width: 185px; }
+    max-width: 185px;
+    width: auto;
+    margin-right: 10px;
+    overflow: hidden; }
   .news-item._float .news-description {
-    max-height: 213px;
+    max-height: 203px;
     overflow: hidden; }
   .news-item._float p {
     display: inline; }
@@ -549,10 +566,12 @@ body * {
   margin: 20px auto;
   .news-image {
     height: 120px;
-    width: 230px; }
+    max-width: 230px;
+    padding-right: 0; }
     .news-image._big {
       height: 160px;
-      width: 300px; }
+      max-width: 300px;
+      padding-right: 0; }
   .news-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -563,10 +582,21 @@ body * {
       font-size: 18px; }
     .news-item._big p {
       max-height: 55px; }
+    .news-item._float .news-description {
+      max-height: 211px; }
   .news-description {
     padding-left: 0; } }
 
 @media only screen and (max-width: 767px) {
+  .news-image {
+    height: 100px;
+    max-width: 200px; }
+    .news-image._big {
+      height: 100px;
+      max-width: 200px; }
+  .news-description {
+    padding-left: 0;
+    min-height: 0; }
   .news-item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -590,15 +620,8 @@ body * {
       text-align: left; }
     .news-item._float .news-description {
       max-height: 210px; }
-  .news-image {
-    height: 100px;
-    width: 200px; }
-    .news-image._big {
-      height: 100px;
-      width: 200px; }
-  .news-description {
-    padding-left: 0;
-    min-height: 0; } }
+    .news-item._float .news-image {
+      margin-right: 0; } }
 
 .home-qr-holder {
   display: -webkit-box;
@@ -772,7 +795,7 @@ body * {
     width: 140px;
     min-width: 140px; }
   .partners-info {
-    padding: 15px;
+    padding: 15px !important;
     text-align: center; }
   .partners-name a {
     font-size: 18px; }
@@ -857,7 +880,7 @@ body * {
     text-align: center;
     text-decoration: underline; }
   .article-content {
-    padding-top: 40px; }
+    padding: 40px 15px 15px 15px; }
     .article-content p {
       display: inline;
       line-height: 1.1;
@@ -871,32 +894,34 @@ body * {
     .article-image img {
       height: auto;
       width: 100%; }
-  @media only screen and (min-width: 768px) and (max-width: 1100px) {
-    .article .article-holder,
-    .article .article-content {
-      padding: 30px; }
-    .article .article-holder {
-      padding-bottom: 60px; }
-    .article .article-image {
-      height: 300px;
-      width: 550px; }
-    .article h2 {
-      font-size: 18px; } }
-  @media only screen and (max-width: 767px) {
-    .article .article-holder,
-    .article .article-content {
-      padding: 20px; }
-    .article .article-holder {
-      padding-bottom: 40px; }
-    .article .article-image {
-      height: auto;
-      width: 100%;
-      padding: 0 0 20px 0;
-      overflow: hidden;
-      float: none;
-      text-align: center; }
-    .article h2 {
-      font-size: 18px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .article-holder,
+  .article-content {
+    padding: 30px; }
+  .article-holder {
+    padding-bottom: 60px; }
+  .article-image {
+    height: 300px;
+    width: 550px; }
+  h2 {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 767px) {
+  .article-holder,
+  .article-content {
+    padding: 20px; }
+  .article-holder {
+    padding-bottom: 40px; }
+  .article-image {
+    height: auto;
+    width: 100%;
+    padding: 0 0 20px 0;
+    overflow: hidden;
+    float: none;
+    text-align: center; }
+  .article-holder h2 {
+    font-size: 18px; } }
 
 .about-content {
   padding: 20px !important; }

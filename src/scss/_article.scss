@@ -11,7 +11,7 @@
     text-decoration: underline;
   }
   &-content {
-    padding-top: 40px;
+    padding: 40px 15px 15px 15px;
     p {
       display: inline;
       line-height: 1.1;
@@ -29,41 +29,40 @@
       width: 100%;
     }
   }
-  @media only screen and (min-width: 768px) and (max-width: 1100px) {
-    .article-holder,
-    .article-content  {
-      padding: 30px;
-    }
-
-    .article-holder {
-      padding-bottom: 60px;
-    }
-    .article-image {
-      height: 300px;
-      width: 550px;
-    }
-    h2 {
-      font-size: $font-m;
-    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .article-holder,
+  .article-content  {
+    padding: 30px;
   }
-  @media only screen and (max-width: 767px) {
-    .article-holder,
-    .article-content {
-      padding: 20px;
-    }
-    .article-holder {
-      padding-bottom: 40px;
-    }
-    .article-image {
-      height: auto;
-      width: 100%;
-      padding: 0 0 20px 0;
-      overflow: hidden;
-      float: none;
-      text-align: center;
-    }
-    h2 {
-      font-size: $font-m;
-    }
+  .article-holder {
+    padding-bottom: 60px;
+  }
+  .article-image {
+    height: 300px;
+    width: 550px;
+  }
+  h2 {
+    font-size: $font-m;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .article-holder,
+  .article-content {
+    padding: 20px;
+  }
+  .article-holder {
+    padding-bottom: 40px;
+  }
+  .article-image {
+    height: auto;
+    width: 100%;
+    padding: 0 0 20px 0;
+    overflow: hidden;
+    float: none;
+    text-align: center;
+  }
+  .article-holder h2 {
+    font-size: $font-m;
   }
 }
