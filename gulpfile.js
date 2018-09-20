@@ -15,8 +15,6 @@ gulp.task('sass', () => {
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass())
         .pipe(autoprefixer(['last 5 versions', '> 1%', 'ie 8'], {cascade: true}))
-        .pipe(cssnano())
-        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('src/css'))
         // .pipe(browserSync.reload({stream: true}))
 });
